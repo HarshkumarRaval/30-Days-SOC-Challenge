@@ -1,0 +1,173 @@
+<svg viewBox="0 0 980 780" xmlns="http://www.w3.org/2000/svg" font-family="Carlito, Calibri, sans-serif">
+  <defs>
+    <marker id="aGray" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#64748b"/></marker>
+    <marker id="aBlue" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2563eb"/></marker>
+    <marker id="aOrange" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#f59e0b"/></marker>
+    <marker id="aOrangeS" markerWidth="9" markerHeight="9" refX="2" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="#f59e0b"/></marker>
+    <marker id="aYellow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ca8a04"/></marker>
+    <marker id="aYellowS" markerWidth="9" markerHeight="9" refX="2" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="#ca8a04"/></marker>
+    <marker id="aCyan" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#0891b2"/></marker>
+    <marker id="aRed" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ef4444"/></marker>
+  </defs>
+
+  <!-- ===================== TOP TIER: Internet & laptops ===================== -->
+  <!-- SOC analyst laptop -->
+  <g>
+    <rect x="48" y="44" width="150" height="78" rx="9" fill="#0f2747" stroke="#00d4ff" stroke-width="1.5"/>
+    <rect x="100" y="60" width="46" height="30" rx="2" fill="#0a1628" stroke="#5ee0ff" stroke-width="1.4"/>
+    <path d="M95 92 L151 92 L156 99 L90 99 Z" fill="#5ee0ff"/>
+    <text x="123" y="112" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">SOC Analyst</text>
+  </g>
+
+  <!-- Internet cloud -->
+  <g>
+    <path d="M430 78 a30 30 0 0 1 58 -10 a26 26 0 0 1 44 14 a24 24 0 0 1 -6 47 H446 a30 30 0 0 1 -16 -51 Z" fill="#eef4f9" stroke="#64748b" stroke-width="1.5"/>
+    <text x="490" y="98" fill="#33414f" font-size="13" font-weight="700" text-anchor="middle">Internet</text>
+  </g>
+
+  <!-- Attacker laptop -->
+  <g>
+    <rect x="782" y="44" width="150" height="78" rx="9" fill="#3b0d0d" stroke="#ef4444" stroke-width="1.5"/>
+    <rect x="834" y="60" width="46" height="30" rx="2" fill="#1a0606" stroke="#f87171" stroke-width="1.4"/>
+    <path d="M829 92 L885 92 L890 99 L824 99 Z" fill="#f87171"/>
+    <text x="857" y="110" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Attacker</text>
+    <text x="857" y="121" fill="#fca5a5" font-size="8" text-anchor="middle">Kali · Mythic C2</text>
+  </g>
+
+  <!-- Internet Gateway -->
+  <g>
+    <rect x="406" y="168" width="168" height="44" rx="8" fill="#0f2747" stroke="#00d4ff" stroke-width="1.5"/>
+    <text x="490" y="188" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Internet Gateway</text>
+    <text x="490" y="202" fill="#9fc3e0" font-size="8" text-anchor="middle">(ISP edge)</text>
+  </g>
+
+  <!-- top-tier connectors -->
+  <line x1="490" y1="125" x2="490" y2="166" stroke="#64748b" stroke-width="1.6"/>
+  <path d="M123 122 C123 150 300 150 406 188" fill="none" stroke="#0891b2" stroke-width="1.6" marker-end="url(#aCyan)" stroke-dasharray="5 3"/>
+  <text x="150" y="146" fill="#0891b2" font-size="8.5" font-weight="700">Connect to Elastic &amp; Kibana (web GUI)</text>
+  <line x1="857" y1="122" x2="857" y2="430" stroke="#ef4444" stroke-width="1.6" marker-end="url(#aRed)"/>
+  <path d="M780 83 C700 83 600 95 540 95" fill="none" stroke="#ef4444" stroke-width="1.4" stroke-dasharray="4 3"/>
+
+  <!-- ===================== VPC ===================== -->
+  <rect x="44" y="248" width="660" height="494" rx="14" fill="#f6fbfd" stroke="#2c7fa8" stroke-width="1.8" stroke-dasharray="8 5"/>
+  <rect x="58" y="236" width="232" height="26" rx="6" fill="#2c7fa8"/>
+  <text x="70" y="254" fill="#ffffff" font-size="11.5" font-weight="700">VPC · 172.31.0.0/24</text>
+  <!-- Vultr provider tag -->
+  <rect x="556" y="262" width="134" height="26" rx="13" fill="#0a1628" stroke="#5ee0ff" stroke-width="1.2"/>
+  <text x="623" y="279" fill="#5ee0ff" font-size="10" font-weight="700" text-anchor="middle" letter-spacing="1">VULTR  CLOUD</text>
+  <text x="62" y="730" fill="#5a6b7a" font-size="8.5">Subnet mask 255.255.255.0  →  usable hosts .1–.254</text>
+
+  <!-- gateway into VPC -->
+  <line x1="490" y1="212" x2="490" y2="248" stroke="#64748b" stroke-width="1.6" marker-end="url(#aGray)"/>
+
+  <!-- Windows server (RDP) -->
+  <g>
+    <rect x="86" y="306" width="172" height="62" rx="9" fill="#102a4c" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="100" y="320" width="20" height="34" rx="2" fill="#0a1628" stroke="#93c5fd" stroke-width="1.2"/>
+    <line x1="104" y1="328" x2="116" y2="328" stroke="#93c5fd" stroke-width="1.2"/>
+    <line x1="104" y1="335" x2="116" y2="335" stroke="#93c5fd" stroke-width="1.2"/>
+    <circle cx="106" cy="347" r="1.6" fill="#22c55e"/>
+    <text x="132" y="332" fill="#ffffff" font-size="11" font-weight="700">Windows Server</text>
+    <text x="132" y="348" fill="#9fc3e0" font-size="9">RDP enabled</text>
+  </g>
+
+  <!-- Ubuntu server (SSH) -->
+  <g>
+    <rect x="490" y="306" width="172" height="62" rx="9" fill="#102a4c" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="504" y="320" width="20" height="34" rx="2" fill="#0a1628" stroke="#93c5fd" stroke-width="1.2"/>
+    <line x1="508" y1="328" x2="520" y2="328" stroke="#93c5fd" stroke-width="1.2"/>
+    <line x1="508" y1="335" x2="520" y2="335" stroke="#93c5fd" stroke-width="1.2"/>
+    <circle cx="510" cy="347" r="1.6" fill="#22c55e"/>
+    <text x="536" y="332" fill="#ffffff" font-size="11" font-weight="700">Ubuntu Server</text>
+    <text x="536" y="348" fill="#9fc3e0" font-size="9">SSH enabled</text>
+  </g>
+
+  <!-- Fleet server -->
+  <g>
+    <rect x="288" y="430" width="172" height="62" rx="9" fill="#102a4c" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="302" y="444" width="20" height="34" rx="2" fill="#0a1628" stroke="#fcd34d" stroke-width="1.2"/>
+    <line x1="306" y1="452" x2="318" y2="452" stroke="#fcd34d" stroke-width="1.2"/>
+    <line x1="306" y1="459" x2="318" y2="459" stroke="#fcd34d" stroke-width="1.2"/>
+    <circle cx="308" cy="471" r="1.6" fill="#22c55e"/>
+    <text x="334" y="456" fill="#ffffff" font-size="11" font-weight="700">Fleet Server</text>
+    <text x="334" y="472" fill="#9fc3e0" font-size="9">Agent management</text>
+  </g>
+
+  <!-- Elastic & Kibana (core) -->
+  <g>
+    <rect x="270" y="560" width="208" height="70" rx="10" fill="#0a1628" stroke="#00d4ff" stroke-width="2.4"/>
+    <rect x="286" y="576" width="22" height="38" rx="2" fill="#102a4c" stroke="#5ee0ff" stroke-width="1.3"/>
+    <line x1="291" y1="585" x2="303" y2="585" stroke="#5ee0ff" stroke-width="1.3"/>
+    <line x1="291" y1="593" x2="303" y2="593" stroke="#5ee0ff" stroke-width="1.3"/>
+    <circle cx="293" cy="606" r="1.8" fill="#00d4ff"/>
+    <text x="320" y="588" fill="#ffffff" font-size="12.5" font-weight="700">Elastic &amp; Kibana</text>
+    <text x="320" y="604" fill="#5ee0ff" font-size="9">SIEM core · search · dashboards · alerts</text>
+    <text x="320" y="619" fill="#9fc3e0" font-size="8.5">— the heart of the SOC —</text>
+  </g>
+
+  <!-- OS Ticket -->
+  <g>
+    <rect x="510" y="556" width="172" height="62" rx="9" fill="#102a4c" stroke="#ca8a04" stroke-width="1.5"/>
+    <rect x="524" y="570" width="20" height="34" rx="2" fill="#0a1628" stroke="#fde047" stroke-width="1.2"/>
+    <line x1="528" y1="578" x2="540" y2="578" stroke="#fde047" stroke-width="1.2"/>
+    <line x1="528" y1="585" x2="540" y2="585" stroke="#fde047" stroke-width="1.2"/>
+    <circle cx="530" cy="597" r="1.6" fill="#22c55e"/>
+    <text x="556" y="582" fill="#ffffff" font-size="11" font-weight="700">OS Ticket</text>
+    <text x="556" y="598" fill="#9fc3e0" font-size="9">Case management</text>
+  </g>
+
+  <!-- ===================== Inside-VPC flows ===================== -->
+  <!-- Windows -> Fleet (managed) -->
+  <path d="M200 368 C230 400 270 410 300 428" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#aGray)"/>
+  <text x="210" y="404" fill="#475569" font-size="8.5" font-weight="700">managed</text>
+  <!-- Ubuntu -> Fleet (managed) -->
+  <path d="M548 368 C520 400 478 410 448 428" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#aGray)"/>
+  <text x="486" y="404" fill="#475569" font-size="8.5" font-weight="700" text-anchor="end">managed</text>
+
+  <!-- Windows -> Elastic (forward logs) outer left -->
+  <path d="M104 368 C70 440 72 530 120 560 C160 584 220 582 268 584" fill="none" stroke="#2563eb" stroke-width="1.6" marker-end="url(#aBlue)"/>
+  <text x="62" y="470" fill="#2563eb" font-size="8.5" font-weight="700">forward logs</text>
+  <text x="62" y="481" fill="#2563eb" font-size="8.5" font-weight="700">via agent</text>
+
+  <!-- Ubuntu -> Elastic (forward logs) — routed to core right side -->
+  <path d="M576 368 C600 440 560 510 480 556" fill="none" stroke="#2563eb" stroke-width="1.6" marker-end="url(#aBlue)"/>
+  <text x="600" y="450" fill="#2563eb" font-size="8.5" font-weight="700">forward logs</text>
+  <text x="600" y="461" fill="#2563eb" font-size="8.5" font-weight="700">via agent</text>
+
+  <!-- Fleet <-> Elastic (manage agents) bidirectional orange -->
+  <line x1="374" y1="492" x2="374" y2="558" stroke="#f59e0b" stroke-width="1.8" marker-end="url(#aOrange)" marker-start="url(#aOrangeS)"/>
+  <text x="382" y="528" fill="#b45309" font-size="8.5" font-weight="700">manage agents</text>
+
+  <!-- Elastic <-> OS Ticket (alerts/tickets) bidirectional yellow -->
+  <line x1="480" y1="592" x2="508" y2="589" stroke="#ca8a04" stroke-width="1.8" marker-end="url(#aYellow)" marker-start="url(#aYellowS)"/>
+  <text x="494" y="632" fill="#a16207" font-size="8.5" font-weight="700" text-anchor="middle">alerts / tickets</text>
+
+  <!-- ===================== C2 server (outside VPC, red) ===================== -->
+  <g>
+    <rect x="772" y="430" width="172" height="62" rx="9" fill="#3b0d0d" stroke="#ef4444" stroke-width="1.8"/>
+    <rect x="786" y="444" width="20" height="34" rx="2" fill="#1a0606" stroke="#f87171" stroke-width="1.2"/>
+    <line x1="790" y1="452" x2="802" y2="452" stroke="#f87171" stroke-width="1.2"/>
+    <line x1="790" y1="459" x2="802" y2="459" stroke="#f87171" stroke-width="1.2"/>
+    <circle cx="792" cy="471" r="1.6" fill="#ef4444"/>
+    <text x="818" y="456" fill="#ffffff" font-size="11" font-weight="700">C2 Server</text>
+    <text x="818" y="472" fill="#fca5a5" font-size="9">Mythic · adversary</text>
+  </g>
+  <text x="772" y="512" fill="#b91c1c" font-size="8" font-style="italic">built on Vultr · kept outside VPC (attacker infra)</text>
+
+  <!-- ===================== Legend ===================== -->
+  <g>
+    <rect x="724" y="556" width="216" height="186" rx="10" fill="#ffffff" stroke="#dbe5ee" stroke-width="1.3"/>
+    <text x="740" y="578" fill="#0f2747" font-size="10.5" font-weight="700">LEGEND</text>
+    <line x1="740" y1="596" x2="772" y2="596" stroke="#2563eb" stroke-width="2"/><text x="780" y="599" fill="#33414f" font-size="9">Log forwarding (agent)</text>
+    <line x1="740" y1="616" x2="772" y2="616" stroke="#f59e0b" stroke-width="2"/><text x="780" y="619" fill="#33414f" font-size="9">Agent management</text>
+    <line x1="740" y1="636" x2="772" y2="636" stroke="#ca8a04" stroke-width="2"/><text x="780" y="639" fill="#33414f" font-size="9">Alerts / tickets</text>
+    <line x1="740" y1="656" x2="772" y2="656" stroke="#64748b" stroke-width="2"/><text x="780" y="659" fill="#33414f" font-size="9">Managed (enrolled)</text>
+    <line x1="740" y1="676" x2="772" y2="676" stroke="#0891b2" stroke-width="2" stroke-dasharray="5 3"/><text x="780" y="679" fill="#33414f" font-size="9">Analyst web access</text>
+    <line x1="740" y1="696" x2="772" y2="696" stroke="#ef4444" stroke-width="2"/><text x="780" y="699" fill="#33414f" font-size="9">Attacker path</text>
+    <rect x="740" y="710" width="14" height="11" rx="2" fill="#0a1628" stroke="#00d4ff" stroke-width="1.6"/><text x="762" y="719" fill="#33414f" font-size="9">SIEM core</text>
+  </g>
+
+  <!-- Title -->
+  <text x="44" y="28" fill="#0f2747" font-size="15" font-weight="700">SOC Home Lab — Logical Network Diagram</text>
+  <text x="520" y="28" fill="#0891b2" font-size="9.5" font-weight="700">Harshkumar Raval · HRTechVerse · Day 01</text>
+</svg>

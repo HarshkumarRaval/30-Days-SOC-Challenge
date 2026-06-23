@@ -1,0 +1,62 @@
+================================================================
+ LINKEDIN POST — Day 1 of the 30 Days SOC Analyst Challenge
+================================================================
+[ Best visual: post the DIAGRAM (export soc-lab-architecture as PNG)
+  as the image, OR attach the Day-01 PDF as a document. Diagrams get
+  strong engagement on LinkedIn — people stop to read them. ]
+
+----------------------------------------------------------------
+OPTION A — Builder tone (recommended)
+----------------------------------------------------------------
+
+Day 1 of 30 ✅ — and rule #1 of building a SOC: design before you deploy. 🛡️
+
+Today I mapped the entire lab as a logical network diagram in draw.io — every server, every data flow, before spinning up a single VM.
+
+The build (all on Vultr, inside one VPC — 172.31.0.0/24):
+🔹 Elastic & Kibana → the SIEM core
+🔹 Windows Server (RDP) + Ubuntu Server (SSH) → the monitored endpoints
+🔹 Fleet Server → manages the agents shipping logs
+🔹 OS Ticket → case management
+🔹 C2 Server (Mythic) → kept OUTSIDE the VPC as attacker infrastructure
+
+Then I traced the flow that the whole month depends on:
+endpoint → agent → Fleet → Elastic → alert → ticket
+
+It feels almost too simple on day one. But this diagram is the mental model — every detection, every investigation later in the challenge slots into it. And honestly? It's the fastest way to explain a whole environment to an interviewer in 30 seconds.
+
+Diagram below 👇 Building in public, one day at a time.
+
+Calm mind, relentless hunt. ⚡
+
+#Cybersecurity #SOC #BlueTeam #SIEM #NetworkSecurity #ELK #CloudSecurity #DetectionEngineering #InfoSec #CyberSecurityCanada #HRTechVerse
+
+
+----------------------------------------------------------------
+OPTION B — Short / punchy
+----------------------------------------------------------------
+
+Day 1/30 ✅ Design before deploy.
+
+Mapped my entire SOC home lab as a logical diagram before building anything:
+
+→ Elastic & Kibana (SIEM core)
+→ Windows (RDP) + Ubuntu (SSH) endpoints
+→ Fleet for agent management
+→ OS Ticket for case management
+→ Mythic C2 — outside the VPC, as the attacker
+
+All on Vultr, one VPC (172.31.0.0/24). The flow that drives the whole month: endpoint → agent → Fleet → Elastic → alert → ticket.
+
+A diagram nobody can see in your head is worthless. So here's mine 👇
+
+#Cybersecurity #SOC #BlueTeam #SIEM #DetectionEngineering #InfoSec #HRTechVerse
+
+
+----------------------------------------------------------------
+FIRST COMMENT (post right after publishing)
+----------------------------------------------------------------
+
+📂 Full build log on GitHub: [PASTE YOUR REPO LINK]
+📺 More cybersecurity & AI content by Harshkumar Raval on my channel HRTechVerse.
+Open to SOC Analyst roles in Canada — let's connect.

@@ -1,0 +1,63 @@
+================================================================
+ LINKEDIN POST — Day 0 of the 30 Days SOC Analyst Challenge
+================================================================
+[ Tip: attach the PDF (Day-00-Introduction-Notes.pdf) as a document
+  to the post, OR a screenshot of page 1. Add your GitHub repo link
+  in the first comment, not the post body — LinkedIn shows native
+  documents more than external links. ]
+
+----------------------------------------------------------------
+OPTION A — Story / momentum tone (recommended)
+----------------------------------------------------------------
+
+Day 0 of 30. 🛡️
+
+I'm taking on the #30DaysSOC Analyst Challenge by Steven (MyDFIR) — and documenting every single day publicly.
+
+Here's the honest reason: certifications and theory got me a foundation, but SOC teams hire people who can APPLY it. So over the next 30 days I'm building a full Security Operations Center home lab from scratch — and attacking it myself.
+
+The roadmap:
+🔹 Week 1 — Build the ELK stack (Elasticsearch + Kibana), ingest Sysmon logs from endpoints
+🔹 Week 2 — Stand up a public SSH/RDP server, detect brute-force attacks, build alerts & dashboards
+🔹 Week 3 — Spin up a C2 server with Mythic and attack my own infrastructure
+🔹 Week 4 — Integrate a ticketing system and run full investigations end-to-end
+
+Every detection maps to MITRE ATT&CK. Every day gets committed to GitHub. No skipped steps.
+
+I've attached my Day 0 notes below 👇 — the full breakdown of what I'm building and why.
+
+If you're hiring SOC Analysts in Canada, follow along — by Day 30 you won't just see a resume, you'll see the work.
+
+Calm mind, relentless hunt. Let's go. ⚡
+
+#Cybersecurity #SOC #BlueTeam #SIEM #ELK #MITREATTACK #DetectionEngineering #ThreatDetection #InfoSec #CyberSecurityJobs #Canada #HRTechVerse
+
+
+----------------------------------------------------------------
+OPTION B — Shorter / punchy tone
+----------------------------------------------------------------
+
+Starting the 30 Days SOC Analyst Challenge today. 🛡️
+
+The plan: build a full SOC home lab, attack it, detect the attack, investigate it — and document all 30 days publicly on GitHub.
+
+→ ELK stack + Sysmon log ingestion
+→ Brute-force detection (SSH/RDP)
+→ C2 simulation with Mythic
+→ Ticketing + full investigations
+→ All mapped to MITRE ATT&CK
+
+Theory gets you in the door. Hands-on keeps you in the room.
+
+Day 0 notes attached. Following along is the easiest way to watch a SOC analyst get built in real time. 👇
+
+#Cybersecurity #SOC #BlueTeam #SIEM #DetectionEngineering #InfoSec #CyberSecurityCanada #HRTechVerse
+
+
+----------------------------------------------------------------
+FIRST COMMENT (post this right after publishing)
+----------------------------------------------------------------
+
+📂 Following the full build on GitHub here: [PASTE YOUR REPO LINK]
+📺 More cybersecurity & AI content by Harshkumar Raval on my channel HRTechVerse.
+Open to SOC Analyst roles in Canada — let's connect.
